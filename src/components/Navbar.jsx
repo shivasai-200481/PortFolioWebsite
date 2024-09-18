@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='max-w-screen-2xl px-4 bg-[#1C1F2A] fixed top-0 md:px-20 container mx-auto'>
+            <div className='max-w-screen-2xl px-4 bg-[#1C1F2A] fixed  top-0 md:px-20 container mx-auto'>
                 <div className='flex justify-between mt-2 md:mt-2'>
                     {/* Logo and Name */}
                     <div className="first flex gap-4">
@@ -58,8 +58,8 @@ const Navbar = () => {
 
                 {/* Mobile Navbar */}
                 {hembuger && (
-                    <div className="md:hidden h-screen flex flex-col justify-center items-center bg-[#1C1F2A]">
-                        <ul className='space-y-4'>
+                    <div className="md:hidden  bg-[#a5adca]">
+                        <ul className='flex h-screen justify-center items-center flex-col space-y-8 cursor-pointer'>
                             {navItems.map(({ text, id }) => (
                                 <li key={id}>
                                     <Link
