@@ -52,21 +52,21 @@ const Navbar = () => {
 
                     {/* Mobile Hamburger Icon */}
                     <div onClick={() => setHembuger(!hembuger)} className='md:hidden'>
-                        {hembuger ? <VscChromeClose className='text-[#5FC3E4]' /> : <RxHamburgerMenu className='text-[#5FC3E4]' />}
+                        {hembuger ? <VscChromeClose className='text-[#311454]' /> : <RxHamburgerMenu className='text-[#5FC3E4]' />}
                     </div>
                 </div>
 
                 {/* Mobile Navbar */}
                 {hembuger && (
-                    <div className="md:hidden  bg-[#a5adca]">
-                        <ul className='flex h-screen justify-center items-center flex-col space-y-8 cursor-pointer'>
+                    <div className="md:hidden  bg-[#301545]">
+                        <ul className='flex  h-screen justify-center items-center flex-col space-y-8 cursor-pointer'>
                             {navItems.map(({ text, id }) => (
                                 <li key={id}>
                                     <Link
                                         onClick={() => setHembuger(!hembuger)}
                                         to={text}
                                         smooth={true}
-                                        offset={-70}
+                                        offset={-100}
                                         duration={500}
                                         activeClass='active'
                                         className='text-[#EDEDED] hover:text-[#5FC3E4] transition-colors duration-300'
