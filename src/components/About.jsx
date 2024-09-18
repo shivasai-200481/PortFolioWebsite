@@ -10,7 +10,7 @@ import { ReactTyped } from "react-typed";
 const About = () => {
     return (
         <>
-            <div name = 'About' className='max-w-screen-2xl px-4 md:px-20 container mx-auto my-16 ' >
+            <div name = 'About' className='max-w-screen-2xl px-4 md:px-20 container mx-auto mt-28 mb-28 ' >
                 <div className='flex md:justify-around md:flex-row  flex-col  '>
                     <div className="left md:w-1/2 order-2 md:order-1 ">
                         <span className='text-2xl font-bold'>Hello, I'm a </span>

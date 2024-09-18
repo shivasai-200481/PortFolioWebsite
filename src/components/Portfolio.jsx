@@ -43,7 +43,7 @@ const Portfolio = () => {
     return (
         <>
         <hr />
-            <div name = 'Portfolio' className='max-w-screen-2xl px-4  md:px-20 container mx-auto'>
+            <div name = 'Portfolio' className='max-w-screen-2xl px-4  md:px-20 container my-20 mx-auto'>
                 <div>
                     <h1 className='font-bold text-3xl' >PortFolio</h1>
                     <p className='font-bold text-red-600 text-2xl mt-2' >Skills</p>
