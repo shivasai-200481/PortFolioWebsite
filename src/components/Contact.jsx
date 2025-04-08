@@ -9,21 +9,21 @@ const Contact = () => {
         register,
         handleSubmit,
         watch,
+        reset, 
         formState: { errors },
     } = useForm()
+    
 
     const onSubmit = async (data) => {
-
         try {
-            await axios.post("https://getform.io/f/bdrywpeb",data)
-            toast.success("Your message has been sent succesfully!")
-
-
+            await axios.post("https://getform.io/f/bdrywpeb", data)
+            toast.success("Your message has been sent successfully!")
+            reset(); 
         } catch (error) {
-            toast.error("There's an error please try again later!")
-
+            toast.error("There's an error, please try again later!")
         }
     }
+    
     return (
         <>
             <hr />

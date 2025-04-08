@@ -10,8 +10,9 @@ const Navbar = () => {
 
     const navItems = [
         { id: 2, text: "About" },
-        { id: 3, text: "Portfolio" },
-        { id: 4, text: "Contact Me" }
+        { id: 3, text: "Projects" },
+        { id: 4, text: "Portfolio" },
+        { id: 5, text: "Contact Me" }
     ];
 
     return (
