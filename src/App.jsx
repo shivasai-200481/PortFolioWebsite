@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import { Toaster } from 'react-hot-toast'
+import Projects from './components/Projects'
 function App() {
 
 
@@ -14,6 +15,7 @@ function App() {
     <div>
     <Navbar/>
     <About/>
+    <Projects/>
     <Portfolio/>
     <Contact/>
     <Footer/>

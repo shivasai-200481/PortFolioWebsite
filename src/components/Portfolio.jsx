@@ -5,6 +5,7 @@ import python from '../../public/python.png'
 import react from '../../public/reactjs.png'
 import tail from '../../public/tailwind.jfif'
 import java from '../../public/java.jpg'
+import express from '../../public/express.png'
 const Portfolio = () => {
     const cardItems = [
         {
@@ -36,6 +37,12 @@ const Portfolio = () => {
             id: 6,
             logo: java,
             name: "Java"
+        },
+        {
+            id:7,
+            logo:express,
+            name:"Exrpess Js"
+
         },
 
     ]

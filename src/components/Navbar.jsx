@@ -37,7 +37,7 @@ const Navbar = () => {
                                 <li key={id}>
                                     <Link
                                         to={text}
-                                        smooth={true}
+                                        smooth={true} 
                                         offset={-100}
                                         duration={500}
                                         activeClass='active'
