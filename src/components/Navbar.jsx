@@ -53,7 +53,7 @@ const Navbar = () => {
 
                     {/* Mobile Hamburger Icon */}
                     <div onClick={() => setHembuger(!hembuger)} className='md:hidden'>
-                        {hembuger ? <VscChromeClose className='text-[#311454] text-5xl' /> : <RxHamburgerMenu className='text-[#5FC3E4]  text-5xl' />}
+                        {hembuger ? <VscChromeClose className='text-[#e0d0f3] text-5xl' /> : <RxHamburgerMenu className='text-[#5FC3E4]  text-5xl' />}
                     </div>
                 </div>
 
