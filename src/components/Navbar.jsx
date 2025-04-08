@@ -4,6 +4,9 @@ import { VscChromeClose } from "react-icons/vsc";
 import { Link } from 'react-scroll';
 
 import pic from "../../public/gem.jfif";
+import { useEffect } from 'react';
+
+
 
 const Navbar = () => {
     const [hembuger, setHembuger] = useState(false);
@@ -14,6 +17,7 @@ const Navbar = () => {
         { id: 4, text: "Portfolio" },
         { id: 5, text: "Contact Me" }
     ];
+    
 
     return (
         <>
@@ -33,12 +37,12 @@ const Navbar = () => {
 
                     {/* Desktop Navbar */}
                     <div className="hidden md:flex second">
-                        <ul className='flex space-x-8 cursor-pointer'>
+                        <ul className='flex z-50 space-x-8 cursor-pointer'>
                             {navItems.map(({ id, text }) => (
                                 <li key={id}>
                                     <Link
                                         to={text}
-                                        smooth={true} 
+                                        smooth={true}
                                         offset={-100}
                                         duration={500}
                                         activeClass='active'
@@ -53,7 +57,7 @@ const Navbar = () => {
 
                     {/* Mobile Hamburger Icon */}
                     <div onClick={() => setHembuger(!hembuger)} className='md:hidden'>
-                        {hembuger ? <VscChromeClose className='text-[#e0d0f3] text-5xl' /> : <RxHamburgerMenu className='text-[#5FC3E4]  text-5xl' />}
+                        {hembuger ? <VscChromeClose className='text-[#d5c8e5] text-5xl' /> : <RxHamburgerMenu className='text-[#5FC3E4]  text-5xl' />}
                     </div>
                 </div>
 
