@@ -1,5 +1,5 @@
 import React from 'react'
-import personalImg from '../../public/personalImg.jpg'
+import myProfilePic from '../../public/myProfilePic.jpg'
 
 import { ReactTyped } from "react-typed";
 
@@ -32,10 +32,14 @@ const About = () => {
                         </p>
 
                     </div>
-                    <div className="right flex items-center mb-4 md:mt-0 justify-center md:w-1/2 order-1 md:order-2  ">
-                        <img className='h-[250px] w-[250px] rounded-full' src={personalImg} alt="" />
-
+                    <div className="right flex items-center justify-center md:justify-end mb-4 md:mt-0 md:w-1/2 order-1 md:order-2">
+                        <div
+                            className="h-[300px] w-[300px] rounded-full  bg-cover "
+                            style={{ backgroundImage: `url(${myProfilePic})`,backgroundPosition:"Top" }}
+                        >
+                        </div>
                     </div>
+
                 </div>
             </div>
         </>

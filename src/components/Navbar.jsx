@@ -37,7 +37,7 @@ const Navbar = () => {
 
                     {/* Desktop Navbar */}
                     <div className="hidden md:flex second">
-                        <ul className='flex z-50 space-x-8 cursor-pointer'>
+                        <ul className='flex z-50 space-x-8 items-center cursor-pointer'>
                             {navItems.map(({ id, text }) => (
                                 <li key={id}>
                                     <Link
